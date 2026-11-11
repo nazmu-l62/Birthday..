@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Special Gift ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="gift-page">
+
+    <div class="romantic-glow"></div>
+
+    <main class="gift-container">
+
+        <p class="gift-top">A LITTLE SURPRISE FOR YOU</p>
+
+        <div class="heart">♥</div>
+
+        <h1 class="gift-title">
+            You Are Truly Special
+        </h1>
+
+        <div class="gold-line"></div>
+
+        <section class="message-card">
+
+            <h2>✨ A Beautiful Wish</h2>
+
+            <p>
+                Life is a beautiful journey, and I hope
+                yours is filled with magical moments,
+                endless opportunities and unforgettable
+                adventures. Never stop shining.
+            </p>
+
+            <div class="message-divider"></div>
+
+            <h2>🌙 কিছু মনের কথা</h2>
+
+            <p class="bangla-message">
+                কিছু মুহূর্ত জীবনে চিরকাল থেকে যায়।
+                কিছু স্মৃতি কখনো পুরোনো হয় না।
+                তোমার আগামী দিনগুলো নতুন স্বপ্ন,
+                সুন্দর গল্প আর অফুরন্ত আনন্দে ভরে উঠুক।
+                নিজের মতো করেই সবসময় সুন্দর থেকো।
+            </p>
+
+        </section>
+
+        <p class="love-footer">
+            WITH LOVE, JUST FOR YOU ❤️
+        </p>
+
+        <a href="index.html" class="back-button">
+            ← Back to Birthday
+        </a>
+
+    </main>
+
+    <audio id="birthdayMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+
+    <script>
+        document.addEventListener("click", function startMusic() {
+            const music = document.getElementById("birthdayMusic");
+            music.play().catch(() => {});
+            document.removeEventListener("click", startMusic);
+        }, { once: true });
+    </script>
+
+</body>
+</html>
